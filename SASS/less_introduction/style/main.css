@@ -1,0 +1,40 @@
+input {
+  background-color: red;
+  font-size: 30px;
+}
+header {
+  color: green;
+}
+main {
+  background-color: yellow;
+}
+main p {
+  color: red;
+}
+main article {
+  background-color: blue;
+}
+main article p {
+  color: yellow;
+}
+footer {
+  color: green;
+}
+button {
+  background-color: #7fc284;
+  font-size: 40px;
+}
+p {
+  margin: 100px;
+  font-size: 20px;
+  color: #1b5e20;
+}
+.fancier-border {
+  border: 2px dashed black;
+  border-radius: 15px;
+  background-color: yellow;
+}
+p {
+  font-size: 20px;
+  color: red;
+}

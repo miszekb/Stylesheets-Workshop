@@ -1,0 +1,64 @@
+@import "button.less";
+
+@theme-color: green;
+@p-margin-size: 100px;
+@base-size: 20px;
+@base-color: #1b5e20;
+
+header {
+    color: @theme-color;
+}
+
+main {
+    background-color: yellow;
+
+    p {
+        color: red;
+    }
+    article {
+        background-color: blue;
+
+        p {
+            color: yellow;
+        }
+    }
+}
+
+footer {
+    color: @theme-color;
+}
+
+button {
+    background-color: @base-color + 100;
+    font-size: @base-size * 2;
+}
+
+p {
+    margin: @p-margin-size;
+    font-size: @base-size;
+    color: @base-color;
+}
+
+.fancy-border(@size: 1px) {
+    border: @size dashed black;
+}
+
+.fancier-border {
+    .fancy-border(2px);
+    border-radius: 15px;
+    background-color: yellow;
+}
+
+.p-style(@size) when (@size <= 20) {
+    font-size: @size;
+    color:red;
+}
+
+.p-style(@size) when (@size > 20) {
+    font-size: @size;
+    color:blue;
+}
+
+p {
+    .p-style(20px);
+}
